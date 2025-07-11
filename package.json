@@ -1,16 +1,16 @@
 {
-  "name": "17-introducción-typeScript",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "buid": "tsc",
-    "start": "node dist/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript": "^5.8.3"
-  }
+	"name": "17-introducción-typeScript",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc",
+		"start": "node dist/exercise-1-and-2.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"typescript": "^5.8.3"
+	}
 }

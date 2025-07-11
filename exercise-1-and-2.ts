@@ -1,4 +1,4 @@
-/* Crear una interfaz Product con propiedades como nombre, precio, stock y una función para calcular el valor total. */
+//* Crear una interfaz Product con propiedades como nombre, precio, stock y una función para calcular el valor total. */
 interface Product {
 	name: string;
 	price: number;
@@ -16,20 +16,20 @@ const calculateTotalProduct = (stock: number, price: number): number => {
 	return stock * price;
 };
 
-/* Implementar un sistema de tipos para un carrito de compras con funciones para añadir/eliminar productos y calcular el total. */
+//* Implementar un sistema de tipos para un carrito de compras con funciones para añadir/eliminar productos y calcular el total. */
 
 const cart: Product[] = [];
 
 const addProduct = (product: Product): void => {
 	cart.push(product);
-	console.log(` ${product.name} added to cart`);
+	console.log(`${product.name} added to cart`);
 };
 
 const removeProduct = (product: Product): void => {
 	const index = cart.indexOf(product);
 	if (index !== -1) {
 		cart.splice(index, 1);
-		console.log(` ${product.name} removed from cart`);
+		console.log(`${product.name} removed from cart`);
 	}
 };
 
@@ -69,3 +69,12 @@ const product3: Product = {
 addProduct(product1);
 addProduct(product2);
 addProduct(product3);
+
+// Calculate total cart value
+calculateTotalCart();
+
+// Remove a product from cart
+removeProduct(product2);
+
+// Calculate total cart value again
+calculateTotalCart();
